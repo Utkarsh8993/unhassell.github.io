@@ -18,29 +18,30 @@
         height: 25rem;
     }
     .main-container{
-        top: 6%;
+        top: 4%;
     }
     .safety-container{
         flex-direction: column;
         align-items: center;
+        margin: 2rem 0rem;
     }
     .safety-big-div{
-        width: 80%;
+        width: 88%;
         margin: 1rem;
+        aspect-ratio: 1.45;
     }
     .safety-message{
         flex-direction: column;
         align-items: flex-start;
-        justify-content: flex-start; 
+        justify-content: flex-start;
+        transition: all 0.3s ease 0s; 
     }
     .safety-message-wrapper{
-        width: 79%;
-        aspect-ratio: 0.823;
+        width: 93%;
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        gap: 1rem;
+        gap: 0.75rem;
     } 
     .safety-message-heading {
         position: relative;
@@ -52,7 +53,7 @@
         position: relative;
         font-size: 0.85rem;
         line-height: 1.25rem;
-        padding: 3px 28px;
+        padding: 0.1875rem 1.75rem 1.1875rem 1.75rem; 
         top: 0%;
     }
     .text-heading-main{
@@ -61,7 +62,7 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #395157;
         line-height: 3.89rem;
-        margin: 36px 0px;
+        margin: 2.25rem 0px;
     }
     .text-heading{
         font-size: 1.75rem;
@@ -77,7 +78,7 @@
         display: none;
     }
     .comment-wrapper{
-        width: 85%;
+        width: 96%;
     }
     .signature{
         margin-top:2rem;
@@ -115,12 +116,12 @@
       .faq-text-subheading {
         display: flex;
         flex-wrap: wrap;
-        max-width: 246px;
+        max-width: 15.75rem;
         font-family: 'Source Sans Pro', sans-serif;
         text-align: justify;
         justify-content: center;
         color: #395157;
-        font-size: 0.755rem;
+        font-size: 1rem;
       }
       .faq-heading{
         font-size: 2.75rem;
@@ -157,6 +158,45 @@
       .about-subtxt{
         font-size: 1.3rem;
         line-height: 1.65rem;
-        margin-top: 14px;
+        margin-top: 0.875rem;
       }
+      .main-txt {
+        font-size: 2.5rem;
+        line-height: 2.85rem;
+    }
+    .subtxt{
+        font-size: 1.25rem;
+        line-height: 1.6rem;
+    }
+    .reviews{
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        width: 90%;
+    }
+    .comment-comma-wrapper{
+        width: 95%;
+    }
+}
+@media (max-width:450px) {
+    .main-txt{
+        font-size: 2rem;
+        line-height: 2.35rem;
+    }
+    .subtxt{
+        font-size: 0.925rem;
+        line-height: 1.3rem;
+    }
+}
+@media (max-width:350px) {
+    .main-txt{
+        font-size:1.5rem;
+        line-height: 2rem;
+    }
+    .subtxt{
+        font-size: 0.725rem;
+        line-height: 1rem;
+    }
 }

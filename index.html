@@ -67,11 +67,18 @@
         <div class="safety-container">
             <div class="safety-big-div">
             </div>
-            <div class="safety-message-wrapper">
-                <div class="safety-sticker">
-                    Safety guaranteed
+            <div class="safety-message-wrapper" id="s1" >
+                <div class="safety-sticker" >
+                    <div class="safety-gauranteed">
+                        Safety guaranteed
+                    </div>
+                    <div class="dropdown" onclick="onSafetyClick(event , 0)">
+                        <img
+                            src="images/Dropdown.svg"
+                            />
+                    </div>
                 </div>
-                <div class="safety-message">
+                <div class="safety-message" id="s2">
                     <div class="safety-message-heading">
                         Safety guaranteed
                     </div>
@@ -79,14 +86,35 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum magna ut elit ultrices eleifend. Donec id suscipit erat. Proin tristique enim mauris, ut eleifend enim sodales quis.
                     </div>
                 </div>
-                <div class="safety-sticker">
-                    Safety guaranteed
+                <div class="safety-sticker" id="s3" >
+                    <div class="safety-gauranteed">
+                        Safety guaranteed
+                    </div>
+                    <div class="dropdown" onclick="onSafetyClick(event , 1)">
+                        <img
+                            src="images/Dropdown.svg"
+                            />
+                    </div>
                 </div>
-                <div class="safety-sticker">
-                    Safety guaranteed
+                <div class="safety-sticker" >
+                    <div class="safety-gauranteed">
+                        Safety guaranteed
+                    </div>
+                    <div class="dropdown" onclick="onSafetyClick(event , 2)">
+                        <img
+                            src="images/Dropdown.svg"
+                            />
+                    </div>
                 </div>
-                <div class="safety-sticker">
-                    Safety guaranteed
+                <div class="safety-sticker" >
+                    <div class="safety-gauranteed">
+                        Safety guaranteed
+                    </div>
+                    <div class="dropdown" onclick="onSafetyClick(event , 3)">
+                        <img
+                            src="images/Dropdown.svg"
+                            />
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,68 +130,83 @@
                             <div class="text-sub-heading">Over 60000 products sold through our platform</div>
                         </div>
                         <div class="reviews">
-                            <div class="comment-wrapper" id="comment-1">
-                                <img src="images/comma.svg" id="comma1"/>
-                                <img src="images/comma.svg" id="comma2"/>
-                                <div class="profilePic">
-                                    <img src="images/Ellipse 13.svg" class="picture"/>
+                            <div class="comment-comma-wrapper" id="comment-1">
+                                <div class="comma-wrapper">
+                                    <img src="images/comma.svg" id="comma1"/>
+                                    <img src="images/comma.svg" id="comma2"/>
                                 </div>
-                                <div class="comment">
-                                    <div class="main-text-wrapper">
-                                        Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
-                                    </div>                                    <div class="signature">
-                                        <div class="name">Utkarsh Sharma</div>
-                                        <div class="title">Co-Founder</div>
+                               <div class="comment-wrapper">
+                                    <div class="profilePic">
+                                        <img src="images/Ellipse 13.svg" class="picture"/>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="main-text-wrapper">
+                                            Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
+                                        </div>
+                                        <div class="signature"> 
+                                            <div class="name">Utkarsh Sharma</div>
+                                             <div class="title">Co-Founder</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="comment-wrapper" id="comment-2">
-                                <img src="images/comma.svg" id="comma1"/>
-                                <img src="images/comma.svg" id="comma2"/>
-                                <div class="profilePic">
-                                    <img src="images/Ellipse 13.svg" class="picture"/>
+                            <div class="comment-comma-wrapper" id="comment-2">
+                                <div class="comma-wrapper">
+                                    <img src="images/comma.svg" id="comma1"/>
+                                    <img src="images/comma.svg" id="comma2"/>
                                 </div>
-                                <div class="comment">
-                                    <div class="main-text-wrapper">
-                                        Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
+                               <div class="comment-wrapper">
+                                    <div class="profilePic">
+                                        <img src="images/Ellipse 13.svg" class="picture"/>
                                     </div>
-                                    <div class="signature">
-
-                                        <div class="name">Utkarsh Sharma</div>
-                                        <div class="title">Co-Founder</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment-wrapper" id="comment-3">
-                                <img src="images/comma.svg" id="comma1"/>
-                                <img src="images/comma.svg" id="comma2"/>
-                                <div class="profilePic">
-                                    <img src="images/Ellipse 13.svg" class="picture"/>
-                                </div>
-                                <div class="comment">
-                                    <div class="main-text-wrapper">
-                                    Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
-                                    </div>
-                                    <div class="signature">
-                                        <div class="name">Utkarsh Sharma</div>
-                                        <div class="title">Co-Founder</div>
+                                    <div class="comment">
+                                        <div class="main-text-wrapper">
+                                            Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
+                                        </div>
+                                        <div class="signature"> 
+                                            <div class="name">Utkarsh Sharma</div>
+                                             <div class="title">Co-Founder</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="comment-wrapper" id="comment-4">
-                                <img src="images/comma.svg" id="comma1"/>
-                                <img src="images/comma.svg" id="comma2"/>
-                                <div class="profilePic">
-                                    <img src="images/Ellipse 13.svg" class="picture"/>
+                            <div class="comment-comma-wrapper" id="comment-3">
+                                <div class="comma-wrapper">
+                                    <img src="images/comma.svg" id="comma1"/>
+                                    <img src="images/comma.svg" id="comma2"/>
                                 </div>
-                                <div class="comment">
-
-                                <div class="main-text-wrapper">
-                                    Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
+                               <div class="comment-wrapper">
+                                    <div class="profilePic">
+                                        <img src="images/Ellipse 13.svg" class="picture"/>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="main-text-wrapper">
+                                            Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
+                                        </div>
+                                        <div class="signature"> 
+                                            <div class="name">Utkarsh Sharma</div>
+                                             <div class="title">Co-Founder</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                    <div class="signature"> 
-                                        <div class="name">Utkarsh Sharma</div>
-                                        <div class="title">Co-Founder</div>
+                            </div>
+                            <div class="comment-comma-wrapper" id="comment-4">
+                                <div class="comma-wrapper">
+                                    <img src="images/comma.svg" id="comma1"/>
+                                    <img src="images/comma.svg" id="comma2"/>
+                                </div>
+                               <div class="comment-wrapper">
+                                    <div class="profilePic">
+                                        <img src="images/Ellipse 13.svg" class="picture"/>
+                                    </div>
+                                    <div class="comment">
+                                        <div class="main-text-wrapper">
+                                            Thank you for making it painless, pleasant and make all of hassle free, Wow! what a great service. I love it! I am so pleased with this product 
+                                        </div>
+                                        <div class="signature"> 
+                                            <div class="name">Utkarsh Sharma</div>
+                                             <div class="title">Co-Founder</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -296,5 +339,22 @@
             </div>
         </div>
       </div>
+      <script>
+        const onSafetyClick = (e , i) => {
+            const sticker = e.target.parentElement.parentElement
+            if(sticker.classList.value === "safety-sticker"){
+                sticker.classList.value = "safety-message";
+                sticker.innerHTML = '<div class="safety-message-heading">Safety guaranteed</div><div class="safety-message-subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum magna ut elit ultrices eleifend. Donec id suscipit erat. Proin tristique enim mauris, ut eleifend enim sodales quis.</div>'
+                const arr = Array.from(document.getElementsByClassName("safety-message"))
+                for (let index = 0; index < arr.length; index++) {
+                    const element = arr[index];
+                    if(index != i){
+                        element.classList.value = "safety-sticker";
+                        element.innerHTML = `<div class="safety-gauranteed">Safety guaranteed</div><div class="dropdown" ><img src="images/Dropdown.svg"/ onclick="onSafetyClick(event , ${index})"></div>`
+                    }
+                }
+            }
+        }
+      </script>
 </body>
 </html>
