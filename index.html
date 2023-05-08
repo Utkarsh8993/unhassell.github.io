@@ -67,7 +67,7 @@
         <div class="safety-container">
             <div class="safety-big-div">
             </div>
-            <div class="safety-message-wrapper" id="s1" >
+            <div class="safety-message-wrapper">
                 <div class="safety-sticker" >
                     <div class="safety-gauranteed">
                         Safety guaranteed
@@ -345,7 +345,8 @@
             if(sticker.classList.value === "safety-sticker"){
                 sticker.classList.value = "safety-message";
                 sticker.innerHTML = '<div class="safety-message-heading">Safety guaranteed</div><div class="safety-message-subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elementum magna ut elit ultrices eleifend. Donec id suscipit erat. Proin tristique enim mauris, ut eleifend enim sodales quis.</div>'
-                const arr = Array.from(document.getElementsByClassName("safety-message"))
+                const arr = Array.from(document.getElementsByClassName("safety-message-wrapper")[0].children)
+                console.log(arr);
                 for (let index = 0; index < arr.length; index++) {
                     const element = arr[index];
                     if(index != i){
@@ -355,6 +356,7 @@
                 }
             }
         }
+        
       </script>
 </body>
 </html>
